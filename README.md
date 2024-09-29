@@ -8,7 +8,7 @@ Things I want to do in this repository:
 
 - [X] Toolchain
 - [X] Bootloader
-- [ ] Kernel
+- [X] Kernel
 - [ ] Root Filesystem
 - [ ] Buildroot
 
@@ -68,4 +68,5 @@ Now, copy the boot folder files to the SD card:
 - start4.elf: The firmware of the GPU.
 
 To learn how to build U-Boot, see the Bootlin labs. Some sites say to upload the "bootcode.bin" file as well, but this is only needed in versions prior to RPi 4, since it contains it's bootloader. The bootloader of RPi 4 is in the SPI EEPROM.
+
 
