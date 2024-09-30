@@ -80,8 +80,15 @@ Now, copy the boot folder files to the SD card:
 
 - u-boot.bin: The DAS U-Boot bootloader.
 - bcm2711-rpi-4-b.dtb: The Device Tree (since U-Boot is loaded by the firmware as the "kernel", it is needed).
-- config.txt: Enables UART, 64-bit mode and sets the "kernel" name (u-boot.txt).
+- config.txt: Enables UART, 64-bit mode and sets the "kernel" name (the binary to be loaded, that is, u-boot.txt).
 - start4.elf: The firmware of the GPU that calls U-Boot, passing the .dtb.
+
+You can download the .dtb and start4.elf in the Raspberry Pi **firmware** repository:
+
+```
+wget https://github.com/raspberrypi/firmware/raw/refs/heads/master/boot/bcm2711-rpi-4-b.dtb
+wget https://github.com/raspberrypi/firmware/raw/refs/heads/master/boot/start4.elf
+```
 
 Finally, umount the SD card:
 

@@ -37,10 +37,10 @@ By default, Crosstool-ng comes with a few ready-to-use configurations. You can s
 
 Currently, there are no configurations for RPi 4. To avoid creating one from scratch, we can use an existing configuration of RPi 3 and modify it to match RPi 4.
 
-Select **aarch64-rpi3-linux-gnu** as a base-line configuration by typing:
+Select **aarch64-rpi3-linux-musl** as a base-line configuration by typing:
 
 ```
-./ct-ng aarch64-rpi3-linux-gnu
+./ct-ng aarch64-rpi3-linux-musl
 ```
 
 To customize the build for the RPi 4:
@@ -69,7 +69,7 @@ In Path and misc options:
 -If not set yet, enable Try features marked as EXPERIMENTAL
 
 In Target options:
-- Set Tuple's alias (TARGET_ALIAS) to arm-linux. This way, we will be able to use the compiler as arm-linux-gcc instead of arm-rpi4-linux-musleabihf-gcc, which is much longer to type.
+- Set Tuple's alias (TARGET_ALIAS) to arm-linux. This way, we will be able to use the compiler as arm-linux-gcc instead of arm-rpi4-linux-musl-gcc, which is much longer to type.
 
 In Operating System:
 - Set Version of linux to the closest, but older version to 6.6. It’s important that the kernel headers used in the toolchain are not more recent than the kernel that will run on the board (v6.6).
@@ -93,7 +93,17 @@ To build the toolchain:
 
 The toolchain will be installed by default in \$HOME/x-tools/. That’s something you could have changed in Crosstool-ng’s configuration.
 
-You can now test your toolchain by adding \$HOME/x-tools/arm-rpi4-linux-musleabihf/bin/to your PATH environment variable (you can copy to /opt/ if you want).
+You can now test your toolchain by adding \$HOME/x-tools/arm-rpi4-linux-musl/bin/to your PATH environment variable (via **export** command or in the .bashrc file).
+
+```
+PATH=~/x-tools/aarch64-rpi4-linux-musl/bin:$PATH
+```
+
+You can copy it to /opt if you want:
+
+```
+PATH=/opt/aarch64-rpi4-linux-musl/bin:$PATH
+```
 
 To test the toolchain:
 
