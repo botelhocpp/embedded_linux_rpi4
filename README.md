@@ -9,8 +9,10 @@ Things I want to do in this repository:
 - [X] Toolchain
 - [X] Bootloader
 - [X] Kernel
+- [X] NFS Filesystem
 - [ ] Root Filesystem
 - [ ] Buildroot
+- [ ] Yocto
 
 ## Support Material
 
@@ -63,7 +65,6 @@ Now, copy the boot folder files to the SD card:
 
 - u-boot.bin: The DAS U-Boot bootloader.
 - bcm2711-rpi-4-b.dtb: The Device Tree (since U-Boot is loaded by the de-facto RPi4 bootloader as the "kernel", it is needed).
-- cmdline.txt: Sets the UART Baudrate (and the actual kernel location).
 - config.txt: Enables UART, 64-bit mode and sets the "kernel" name (u-boot.txt).
 - start4.elf: The firmware of the GPU.
 

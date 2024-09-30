@@ -1,7 +1,0 @@
-/* Generated automatically. */
-static const char configuration_arguments[] = "/home/boltragons/rpi4/crosstool-ng/.build/aarch64-rpi4-linux-musl/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=aarch64-rpi4-linux-musl --prefix=/home/boltragons/x-tools/aarch64-rpi4-linux-musl --exec_prefix=/home/boltragons/x-tools/aarch64-rpi4-linux-musl --with-sysroot=/home/boltragons/x-tools/aarch64-rpi4-linux-musl/aarch64-rpi4-linux-musl/sysroot --enable-languages=c,c++ --with-cpu=cortex-a72 --with-pkgversion='crosstool-NG 1.26.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --disable-libmpx --with-gmp=/home/boltragons/rpi4/crosstool-ng/.build/aarch64-rpi4-linux-musl/buildtools --with-mpfr=/home/boltragons/rpi4/crosstool-ng/.build/aarch64-rpi4-linux-musl/buildtools --with-mpc=/home/boltragons/rpi4/crosstool-ng/.build/aarch64-rpi4-linux-musl/buildtools --with-isl=/home/boltragons/rpi4/crosstool-ng/.build/aarch64-rpi4-linux-musl/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-multilib --with-local-prefix=/home/boltragons/x-tools/aarch64-rpi4-linux-musl/aarch64-rpi4-linux-musl/sysroot --enable-long-long";
-static const char thread_model[] = "posix";
-
-static const struct {
-  const char *name, *value;
-} configure_default_options[] = { { "cpu", "cortex-a72" } };
